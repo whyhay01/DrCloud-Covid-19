@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="horizontal"
+    android:background="@color/text_white">
+
+    <ImageView
+        android:id="@+id/icon_done"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="@dimen/margin_top_body"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/icon_done"/>
+
+    <TextView
+        android:id="@+id/my_journey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="INTAKE"
+        android:fontFamily="@font/nunito"
+        android:textSize="20sp"/>
+
+    <ImageButton
+        android:id="@+id/drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/cross_dropdown"/>
+
+
+</LinearLayout>
