@@ -80,8 +80,7 @@ public class DataFactory {
     }
 
     private static Guideline makeSecondGuideline(){
-        Guideline secondGuideline = new Guideline("Super Hero Guide", makeArticles());
-        return secondGuideline;
+        return new Guideline("Super Hero Guide", makeArticles());
     }
 
     private static Guideline makeThirdGuideline(){

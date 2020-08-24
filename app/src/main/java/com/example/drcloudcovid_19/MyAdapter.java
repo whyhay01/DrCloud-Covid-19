@@ -37,7 +37,7 @@ public class MyAdapter extends ExpandableRecyclerViewAdapter<MyJourneyViewHolder
 
     @Override
     public void onBindGroupViewHolder(MyJourneyViewHolder holder, int flatPosition, ExpandableGroup group) {
-        holder.setMyJourney((MyJourney) group);
+        holder.setMyJourney(group);
 
     }
 }

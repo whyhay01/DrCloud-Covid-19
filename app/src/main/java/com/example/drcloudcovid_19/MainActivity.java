@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import static com.example.drcloudcovid_19.DataFactory.makeJourney;
+
 public class MainActivity extends AppCompatActivity {
 
     List<MyJourney> journey;
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.rv_expandable);
 
-        adapter = new MyAdapter(journey);
+        adapter = new MyAdapter(makeJourney());
         layoutManager= new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
