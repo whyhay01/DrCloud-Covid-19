@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_bk_arrow"
         android:layout_width="33dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -33,7 +33,7 @@
         android:text="MY JOURNEY"
         android:textColor="@color/text_white"
         android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/img_bk_arrow"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
     <ImageView
@@ -57,6 +57,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progress_percent"
         app:layout_constraintVertical_bias="0" />
+
+    <Button
+        android:id="@+id/btn_journey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/red"
+        android:text="Next page"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/img_back"
         android:layout_width="33dp"
         android:layout_height="33dp"
         android:layout_marginStart="16dp"
@@ -32,14 +32,15 @@
         android:text="Donate Food"
         android:textColor="@color/text_white"
         android:textSize="25sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/img_back"
         app:layout_constraintTop_toTopOf="@+id/view" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="Donate Food Details"
         android:textColor="@color/text_black"
@@ -202,61 +203,65 @@
                 android:textSize="12sp" />
         </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="10dp"
-            android:text="Photos"
-            android:textColor="@color/text_ash"
-            android:textSize="12sp"
-            android:fontFamily="@font/nunito_bold"/>
-
-
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Photos"
+        android:textColor="@color/text_ash"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
+
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBox"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
         app:srcCompat="@drawable/image_item" />
 
     <CheckBox
         android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
+        android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
-        android:textSize="10sp"
-        android:fontFamily="@font/nunito_bold"
-        android:textColor="@color/text_ash"
-        android:text="@string/i_assure_that_the_quality_and_hygiene_is_maintained"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
         android:buttonTint="@color/appbar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        android:fontFamily="@font/nunito_bold"
+        android:text="@string/i_assure_that_the_quality_and_hygiene_is_maintained"
+        android:textColor="@color/text_ash"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <View
         android:id="@+id/view2"
-        android:layout_width="127dp"
+        android:layout_width="147dp"
         android:layout_height="70dp"
-        android:layout_marginStart="16dp"
         android:background="@drawable/donate"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
+        android:id="@+id/txt_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/nunito_extrabold"
         android:text="Submit"
         android:textColor="@color/text_white"
         android:textSize="21sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="@+id/view2" />
 

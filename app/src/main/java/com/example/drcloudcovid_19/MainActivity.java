@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -16,12 +19,10 @@ import static com.example.drcloudcovid_19.DataFactory.makeJourney;
 
 public class MainActivity extends AppCompatActivity {
 
-    List<MyJourney> journey;
     MyAdapter adapter;
     RecyclerView recyclerView;
     LinearLayoutManager layoutManager;
-
-    List<JourneyProgress> journeyProgressList;
+    Button btnNextPage;
 
 
     @Override
@@ -29,6 +30,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.rv_expandable);
+        btnNextPage = findViewById(R.id.btn_journey);
+
+        btnNextPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), CashDonation.class);
+                startActivity(intent);
+                finish();
+            }
+        });
 
         adapter = new MyAdapter(makeJourney());
         layoutManager= new LinearLayoutManager(this);
