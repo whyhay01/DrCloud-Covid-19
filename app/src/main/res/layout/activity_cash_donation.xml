@@ -151,10 +151,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <ScrollView
+    <HorizontalScrollView
         android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="172dp"
+        android:scrollbars="horizontal|vertical"
         android:layout_marginStart="8dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -365,10 +366,9 @@
 
             </LinearLayout>
 
-
-
         </LinearLayout>
-    </ScrollView>
+
+    </HorizontalScrollView>
 
     <Button
         android:id="@+id/btn_donate"
